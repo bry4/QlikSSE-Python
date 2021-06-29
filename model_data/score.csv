@@ -1,0 +1,3 @@
+model,score
+Random Forest,0.8237111947477702
+XGBoost,0.8410750292534813
