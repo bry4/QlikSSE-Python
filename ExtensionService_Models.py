@@ -69,7 +69,7 @@ class ExtensionService(SSE.ConnectorServicer):
         for request_rows in request:
 
             for row in request_rows.rows:
-                params = [d.strData for d in row.duals][0]
+                params = [d.strData for d in row.duals]
 
                 result = params[0].split("|")
 
@@ -99,7 +99,7 @@ class ExtensionService(SSE.ConnectorServicer):
         for request_rows in request:
 
             for row in request_rows.rows:
-                params = [d.strData for d in row.duals][0]
+                params = [d.strData for d in row.duals]
 
                 result = params[0].split("|")
 

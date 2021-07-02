@@ -19,6 +19,9 @@ def main():
     ## Training data
     train = pd.read_csv('./data/train.csv')
 
+    with open('./model_data/str_columns.json', 'w') as f:
+        json.dump(list(train.select_dtypes("O").columns), f)
+
     for col in train.select_dtypes("O").columns:
         train[col] = label_encoder.fit_transform(train[col].astype('str'))
 

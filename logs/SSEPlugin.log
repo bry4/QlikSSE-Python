@@ -1,2 +1,129 @@
-2021-07-02 00:26:01,326 - INFO - ExtensionService_Models : 35 - Logging enabled
-2021-07-02 00:26:01,342 - INFO - ExtensionService_Models : 222 - *** Running server in insecure mode on port: 50053 ***
+2021-07-02 10:59:15,910 - INFO - ExtensionService_Models : 35 - Logging enabled
+2021-07-02 10:59:15,961 - INFO - ExtensionService_Models : 224 - *** Running server in insecure mode on port: 50053 ***
+2021-07-02 10:59:26,385 - INFO - ExtensionService_Models : 154 - GetCapabilities
+2021-07-02 10:59:26,493 - INFO - ExtensionService_Models : 177 - Adding to capabilities: random_forest(['column1'])
+2021-07-02 10:59:26,496 - INFO - ExtensionService_Models : 177 - Adding to capabilities: xgboost(['column1'])
+2021-07-02 11:00:54,528 - INFO - ExtensionService_Models : 191 - ExecuteFunction (functionId: 0)
+2021-07-02 11:01:10,408 - INFO - ExtensionService_Models : 93 - Funcion Ejecutada - Random Forest
+2021-07-02 11:01:10,413 - INFO - ExtensionService_Models : 191 - ExecuteFunction (functionId: 1)
+2021-07-02 11:01:23,446 - INFO - ExtensionService_Models : 123 - Funcion Ejecutada - XGBoost
+2021-07-02 11:41:18,017 - INFO - ExtensionService_Models : 35 - Logging enabled
+2021-07-02 11:41:18,022 - INFO - ExtensionService_Models : 227 - *** Running server in insecure mode on port: 50053 ***
+2021-07-02 11:41:22,360 - INFO - ExtensionService_Models : 157 - GetCapabilities
+2021-07-02 11:41:22,371 - INFO - ExtensionService_Models : 180 - Adding to capabilities: random_forest(['column1'])
+2021-07-02 11:41:22,373 - INFO - ExtensionService_Models : 180 - Adding to capabilities: xgboost(['column1'])
+2021-07-02 11:42:03,909 - INFO - ExtensionService_Models : 194 - ExecuteFunction (functionId: 0)
+2021-07-02 11:42:19,805 - INFO - ExtensionService_Models : 96 - Funcion Ejecutada - Random Forest
+2021-07-02 11:42:19,814 - INFO - ExtensionService_Models : 194 - ExecuteFunction (functionId: 1)
+2021-07-02 11:42:33,641 - INFO - ExtensionService_Models : 126 - Funcion Ejecutada - XGBoost
+2021-07-02 11:53:47,463 - INFO - ExtensionService_Models : 35 - Logging enabled
+2021-07-02 11:53:47,468 - INFO - ExtensionService_Models : 222 - *** Running server in insecure mode on port: 50053 ***
+2021-07-02 11:53:52,440 - INFO - ExtensionService_Models : 152 - GetCapabilities
+2021-07-02 11:53:52,608 - INFO - ExtensionService_Models : 175 - Adding to capabilities: random_forest(['column1'])
+2021-07-02 11:53:52,630 - INFO - ExtensionService_Models : 175 - Adding to capabilities: xgboost(['column1'])
+2021-07-02 11:54:34,066 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 0)
+2021-07-02 11:54:47,235 - INFO - ExtensionService_Models : 91 - Funcion Ejecutada - Random Forest
+2021-07-02 11:54:47,240 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 1)
+2021-07-02 11:55:00,837 - INFO - ExtensionService_Models : 121 - Funcion Ejecutada - XGBoost
+2021-07-02 12:10:15,777 - INFO - ExtensionService_Models : 35 - Logging enabled
+2021-07-02 12:10:15,782 - INFO - ExtensionService_Models : 222 - *** Running server in insecure mode on port: 50053 ***
+2021-07-02 12:10:24,117 - INFO - ExtensionService_Models : 152 - GetCapabilities
+2021-07-02 12:10:24,126 - INFO - ExtensionService_Models : 175 - Adding to capabilities: random_forest(['column1'])
+2021-07-02 12:10:24,127 - INFO - ExtensionService_Models : 175 - Adding to capabilities: xgboost(['column1'])
+2021-07-02 12:11:34,174 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 0)
+2021-07-02 12:11:48,552 - INFO - ExtensionService_Models : 91 - Funcion Ejecutada - Random Forest
+2021-07-02 12:11:48,556 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 1)
+2021-07-02 12:12:01,992 - INFO - ExtensionService_Models : 121 - Funcion Ejecutada - XGBoost
+2021-07-02 12:39:52,810 - INFO - ExtensionService_Models : 35 - Logging enabled
+2021-07-02 12:39:52,820 - INFO - ExtensionService_Models : 222 - *** Running server in insecure mode on port: 50053 ***
+2021-07-02 12:39:57,274 - INFO - ExtensionService_Models : 152 - GetCapabilities
+2021-07-02 12:39:57,284 - INFO - ExtensionService_Models : 175 - Adding to capabilities: random_forest(['column1'])
+2021-07-02 12:39:57,286 - INFO - ExtensionService_Models : 175 - Adding to capabilities: xgboost(['column1'])
+2021-07-02 12:40:57,017 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 0)
+2021-07-02 12:41:08,490 - ERROR - _server : 472 - Exception iterating responses: could not convert string to float: 'NA'
+Traceback (most recent call last):
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/grpc/_server.py", line 462, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "ExtensionService_Models.py", line 80, in _random_forest
+    df_model = random_forest(df_final)
+  File "/mnt/f/Bryan/Proyecto/python_sse_docker/src/function_models.py", line 35, in random_forest
+    df_rf = transform(df)
+  File "/mnt/f/Bryan/Proyecto/python_sse_docker/src/function_models.py", line 29, in transform
+    test_imputed = my_imputer.fit_transform(test)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/sklearn/impute/_iterative.py", line 607, in fit_transform
+    self._initial_imputation(X, in_fit=True))
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/sklearn/impute/_iterative.py", line 512, in _initial_imputation
+    X = self._validate_data(X, dtype=FLOAT_DTYPES, order="F", reset=in_fit,
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/sklearn/base.py", line 421, in _validate_data
+    X = check_array(X, **check_params)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/sklearn/utils/validation.py", line 673, in check_array
+    array = np.asarray(array, order=order, dtype=dtype)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/generic.py", line 1899, in __array__
+    return np.asarray(self._values, dtype=dtype)
+ValueError: could not convert string to float: 'NA'
+2021-07-02 12:41:08,522 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 0)
+2021-07-02 12:41:19,868 - ERROR - _server : 472 - Exception iterating responses: could not convert string to float: 'NA'
+Traceback (most recent call last):
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/grpc/_server.py", line 462, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "ExtensionService_Models.py", line 80, in _random_forest
+    df_model = random_forest(df_final)
+  File "/mnt/f/Bryan/Proyecto/python_sse_docker/src/function_models.py", line 35, in random_forest
+    df_rf = transform(df)
+  File "/mnt/f/Bryan/Proyecto/python_sse_docker/src/function_models.py", line 29, in transform
+    test_imputed = my_imputer.fit_transform(test)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/sklearn/impute/_iterative.py", line 607, in fit_transform
+    self._initial_imputation(X, in_fit=True))
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/sklearn/impute/_iterative.py", line 512, in _initial_imputation
+    X = self._validate_data(X, dtype=FLOAT_DTYPES, order="F", reset=in_fit,
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/sklearn/base.py", line 421, in _validate_data
+    X = check_array(X, **check_params)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/sklearn/utils/validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/sklearn/utils/validation.py", line 673, in check_array
+    array = np.asarray(array, order=order, dtype=dtype)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/generic.py", line 1899, in __array__
+    return np.asarray(self._values, dtype=dtype)
+ValueError: could not convert string to float: 'NA'
+2021-07-02 12:51:57,252 - INFO - ExtensionService_Models : 35 - Logging enabled
+2021-07-02 12:51:57,256 - INFO - ExtensionService_Models : 222 - *** Running server in insecure mode on port: 50053 ***
+2021-07-02 12:52:01,904 - INFO - ExtensionService_Models : 152 - GetCapabilities
+2021-07-02 12:52:01,917 - INFO - ExtensionService_Models : 175 - Adding to capabilities: random_forest(['column1'])
+2021-07-02 12:52:01,918 - INFO - ExtensionService_Models : 175 - Adding to capabilities: xgboost(['column1'])
+2021-07-02 12:52:41,906 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 0)
+2021-07-02 12:52:59,376 - INFO - ExtensionService_Models : 91 - Funcion Ejecutada - Random Forest
+2021-07-02 12:52:59,380 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 1)
+2021-07-02 12:53:17,231 - INFO - ExtensionService_Models : 121 - Funcion Ejecutada - XGBoost
+2021-07-02 13:01:27,743 - INFO - ExtensionService_Models : 35 - Logging enabled
+2021-07-02 13:01:27,749 - INFO - ExtensionService_Models : 222 - *** Running server in insecure mode on port: 50053 ***
+2021-07-02 13:02:01,940 - INFO - ExtensionService_Models : 152 - GetCapabilities
+2021-07-02 13:02:01,960 - INFO - ExtensionService_Models : 175 - Adding to capabilities: random_forest(['column1'])
+2021-07-02 13:02:01,966 - INFO - ExtensionService_Models : 175 - Adding to capabilities: xgboost(['column1'])
+2021-07-02 13:03:10,138 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 0)
+2021-07-02 13:03:27,706 - INFO - ExtensionService_Models : 91 - Funcion Ejecutada - Random Forest
+2021-07-02 13:03:27,709 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 1)
+2021-07-02 13:03:45,181 - INFO - ExtensionService_Models : 121 - Funcion Ejecutada - XGBoost
+2021-07-02 13:18:58,618 - INFO - ExtensionService_Models : 35 - Logging enabled
+2021-07-02 13:18:58,624 - INFO - ExtensionService_Models : 222 - *** Running server in insecure mode on port: 50053 ***
+2021-07-02 13:19:27,847 - INFO - ExtensionService_Models : 152 - GetCapabilities
+2021-07-02 13:19:27,866 - INFO - ExtensionService_Models : 175 - Adding to capabilities: random_forest(['column1'])
+2021-07-02 13:19:27,870 - INFO - ExtensionService_Models : 175 - Adding to capabilities: xgboost(['column1'])
+2021-07-02 13:20:05,574 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 0)
+2021-07-02 13:20:25,121 - INFO - ExtensionService_Models : 91 - Funcion Ejecutada - Random Forest
+2021-07-02 13:20:25,126 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 1)
+2021-07-02 13:20:44,772 - INFO - ExtensionService_Models : 121 - Funcion Ejecutada - XGBoost
+2021-07-02 13:21:53,631 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 0)
+2021-07-02 13:22:16,164 - INFO - ExtensionService_Models : 91 - Funcion Ejecutada - Random Forest
+2021-07-02 13:22:16,168 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 1)
+2021-07-02 13:22:37,815 - INFO - ExtensionService_Models : 121 - Funcion Ejecutada - XGBoost
+2021-07-02 14:07:14,274 - INFO - ExtensionService_Models : 35 - Logging enabled
+2021-07-02 14:07:14,279 - INFO - ExtensionService_Models : 222 - *** Running server in insecure mode on port: 50053 ***
+2021-07-02 14:07:21,872 - INFO - ExtensionService_Models : 152 - GetCapabilities
+2021-07-02 14:07:21,975 - INFO - ExtensionService_Models : 175 - Adding to capabilities: random_forest(['column1'])
+2021-07-02 14:07:21,980 - INFO - ExtensionService_Models : 175 - Adding to capabilities: xgboost(['column1'])
+2021-07-02 14:08:45,852 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 0)
+2021-07-02 14:09:07,401 - INFO - ExtensionService_Models : 91 - Funcion Ejecutada - Random Forest
+2021-07-02 14:09:07,405 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 1)
+2021-07-02 14:09:52,922 - INFO - ExtensionService_Models : 121 - Funcion Ejecutada - XGBoost

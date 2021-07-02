@@ -1,0 +1,323 @@
+2021-07-02 00:26:01,326 - INFO - ExtensionService_Models : 35 - Logging enabled
+2021-07-02 00:26:01,342 - INFO - ExtensionService_Models : 222 - *** Running server in insecure mode on port: 50053 ***
+2021-07-02 00:47:06,744 - INFO - ExtensionService_Models : 35 - Logging enabled
+2021-07-02 00:47:06,776 - INFO - ExtensionService_Models : 222 - *** Running server in insecure mode on port: 50053 ***
+2021-07-02 00:47:19,043 - INFO - ExtensionService_Models : 152 - GetCapabilities
+2021-07-02 00:47:19,183 - INFO - ExtensionService_Models : 175 - Adding to capabilities: random_forest(['column1'])
+2021-07-02 00:47:19,187 - INFO - ExtensionService_Models : 175 - Adding to capabilities: xgboost(['column1'])
+2021-07-02 00:48:16,559 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 0)
+2021-07-02 00:48:18,719 - ERROR - _server : 472 - Exception iterating responses: 80 columns passed, passed data had 1 columns
+Traceback (most recent call last):
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 568, in _list_to_arrays
+    columns = _validate_or_indexify_columns(content, columns)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 692, in _validate_or_indexify_columns
+    raise AssertionError(
+AssertionError: 80 columns passed, passed data had 1 columns
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/grpc/_server.py", line 462, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "ExtensionService_Models.py", line 76, in _random_forest
+    df_result = pd.DataFrame(data=[result],columns=df_columns.columns)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/frame.py", line 570, in __init__
+    arrays, columns = to_arrays(data, columns, dtype=dtype)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 528, in to_arrays
+    return _list_to_arrays(data, columns, coerce_float=coerce_float, dtype=dtype)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 571, in _list_to_arrays
+    raise ValueError(e) from e
+ValueError: 80 columns passed, passed data had 1 columns
+2021-07-02 00:48:18,740 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 0)
+2021-07-02 00:48:18,779 - ERROR - _server : 472 - Exception iterating responses: 80 columns passed, passed data had 1 columns
+Traceback (most recent call last):
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 568, in _list_to_arrays
+    columns = _validate_or_indexify_columns(content, columns)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 692, in _validate_or_indexify_columns
+    raise AssertionError(
+AssertionError: 80 columns passed, passed data had 1 columns
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/grpc/_server.py", line 462, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "ExtensionService_Models.py", line 76, in _random_forest
+    df_result = pd.DataFrame(data=[result],columns=df_columns.columns)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/frame.py", line 570, in __init__
+    arrays, columns = to_arrays(data, columns, dtype=dtype)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 528, in to_arrays
+    return _list_to_arrays(data, columns, coerce_float=coerce_float, dtype=dtype)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 571, in _list_to_arrays
+    raise ValueError(e) from e
+ValueError: 80 columns passed, passed data had 1 columns
+2021-07-02 00:53:40,024 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 0)
+2021-07-02 00:53:40,070 - ERROR - _server : 472 - Exception iterating responses: 80 columns passed, passed data had 1 columns
+Traceback (most recent call last):
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 568, in _list_to_arrays
+    columns = _validate_or_indexify_columns(content, columns)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 692, in _validate_or_indexify_columns
+    raise AssertionError(
+AssertionError: 80 columns passed, passed data had 1 columns
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/grpc/_server.py", line 462, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "ExtensionService_Models.py", line 76, in _random_forest
+    print(result)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/frame.py", line 570, in __init__
+    arrays, columns = to_arrays(data, columns, dtype=dtype)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 528, in to_arrays
+    return _list_to_arrays(data, columns, coerce_float=coerce_float, dtype=dtype)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 571, in _list_to_arrays
+    raise ValueError(e) from e
+ValueError: 80 columns passed, passed data had 1 columns
+2021-07-02 00:53:40,083 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 0)
+2021-07-02 00:53:40,135 - ERROR - _server : 472 - Exception iterating responses: 80 columns passed, passed data had 1 columns
+Traceback (most recent call last):
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 568, in _list_to_arrays
+    columns = _validate_or_indexify_columns(content, columns)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 692, in _validate_or_indexify_columns
+    raise AssertionError(
+AssertionError: 80 columns passed, passed data had 1 columns
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/grpc/_server.py", line 462, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "ExtensionService_Models.py", line 76, in _random_forest
+    print(result)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/frame.py", line 570, in __init__
+    arrays, columns = to_arrays(data, columns, dtype=dtype)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 528, in to_arrays
+    return _list_to_arrays(data, columns, coerce_float=coerce_float, dtype=dtype)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 571, in _list_to_arrays
+    raise ValueError(e) from e
+ValueError: 80 columns passed, passed data had 1 columns
+2021-07-02 00:55:09,451 - INFO - ExtensionService_Models : 35 - Logging enabled
+2021-07-02 00:55:09,456 - INFO - ExtensionService_Models : 226 - *** Running server in insecure mode on port: 50053 ***
+2021-07-02 00:55:17,527 - INFO - ExtensionService_Models : 156 - GetCapabilities
+2021-07-02 00:55:17,548 - INFO - ExtensionService_Models : 179 - Adding to capabilities: random_forest(['column1'])
+2021-07-02 00:55:17,549 - INFO - ExtensionService_Models : 179 - Adding to capabilities: xgboost(['column1'])
+2021-07-02 00:56:38,512 - INFO - ExtensionService_Models : 193 - ExecuteFunction (functionId: 0)
+2021-07-02 00:56:38,561 - ERROR - _server : 472 - Exception iterating responses: 80 columns passed, passed data had 1 columns
+Traceback (most recent call last):
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 568, in _list_to_arrays
+    columns = _validate_or_indexify_columns(content, columns)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 692, in _validate_or_indexify_columns
+    raise AssertionError(
+AssertionError: 80 columns passed, passed data had 1 columns
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/grpc/_server.py", line 462, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "ExtensionService_Models.py", line 80, in _random_forest
+    df_result = pd.DataFrame(data=[result],columns=df_columns.columns)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/frame.py", line 570, in __init__
+    arrays, columns = to_arrays(data, columns, dtype=dtype)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 528, in to_arrays
+    return _list_to_arrays(data, columns, coerce_float=coerce_float, dtype=dtype)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 571, in _list_to_arrays
+    raise ValueError(e) from e
+ValueError: 80 columns passed, passed data had 1 columns
+2021-07-02 00:56:38,574 - INFO - ExtensionService_Models : 193 - ExecuteFunction (functionId: 0)
+2021-07-02 00:56:38,617 - ERROR - _server : 472 - Exception iterating responses: 80 columns passed, passed data had 1 columns
+Traceback (most recent call last):
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 568, in _list_to_arrays
+    columns = _validate_or_indexify_columns(content, columns)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 692, in _validate_or_indexify_columns
+    raise AssertionError(
+AssertionError: 80 columns passed, passed data had 1 columns
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/grpc/_server.py", line 462, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "ExtensionService_Models.py", line 80, in _random_forest
+    df_result = pd.DataFrame(data=[result],columns=df_columns.columns)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/frame.py", line 570, in __init__
+    arrays, columns = to_arrays(data, columns, dtype=dtype)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 528, in to_arrays
+    return _list_to_arrays(data, columns, coerce_float=coerce_float, dtype=dtype)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 571, in _list_to_arrays
+    raise ValueError(e) from e
+ValueError: 80 columns passed, passed data had 1 columns
+2021-07-02 00:58:18,805 - INFO - ExtensionService_Models : 35 - Logging enabled
+2021-07-02 00:58:18,811 - INFO - ExtensionService_Models : 226 - *** Running server in insecure mode on port: 50053 ***
+2021-07-02 00:58:48,768 - INFO - ExtensionService_Models : 156 - GetCapabilities
+2021-07-02 00:58:48,778 - INFO - ExtensionService_Models : 179 - Adding to capabilities: random_forest(['column1'])
+2021-07-02 00:58:48,778 - INFO - ExtensionService_Models : 179 - Adding to capabilities: xgboost(['column1'])
+2021-07-02 00:59:40,664 - INFO - ExtensionService_Models : 193 - ExecuteFunction (functionId: 0)
+2021-07-02 00:59:40,718 - ERROR - _server : 472 - Exception iterating responses: 80 columns passed, passed data had 1 columns
+Traceback (most recent call last):
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 568, in _list_to_arrays
+    columns = _validate_or_indexify_columns(content, columns)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 692, in _validate_or_indexify_columns
+    raise AssertionError(
+AssertionError: 80 columns passed, passed data had 1 columns
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/grpc/_server.py", line 462, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "ExtensionService_Models.py", line 80, in _random_forest
+    df_result = pd.DataFrame(data=[result],columns=df_columns.columns)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/frame.py", line 570, in __init__
+    arrays, columns = to_arrays(data, columns, dtype=dtype)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 528, in to_arrays
+    return _list_to_arrays(data, columns, coerce_float=coerce_float, dtype=dtype)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 571, in _list_to_arrays
+    raise ValueError(e) from e
+ValueError: 80 columns passed, passed data had 1 columns
+2021-07-02 00:59:40,727 - INFO - ExtensionService_Models : 193 - ExecuteFunction (functionId: 0)
+2021-07-02 00:59:40,772 - ERROR - _server : 472 - Exception iterating responses: 80 columns passed, passed data had 1 columns
+Traceback (most recent call last):
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 568, in _list_to_arrays
+    columns = _validate_or_indexify_columns(content, columns)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 692, in _validate_or_indexify_columns
+    raise AssertionError(
+AssertionError: 80 columns passed, passed data had 1 columns
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/grpc/_server.py", line 462, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "ExtensionService_Models.py", line 80, in _random_forest
+    df_result = pd.DataFrame(data=[result],columns=df_columns.columns)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/frame.py", line 570, in __init__
+    arrays, columns = to_arrays(data, columns, dtype=dtype)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 528, in to_arrays
+    return _list_to_arrays(data, columns, coerce_float=coerce_float, dtype=dtype)
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/pandas/core/internals/construction.py", line 571, in _list_to_arrays
+    raise ValueError(e) from e
+ValueError: 80 columns passed, passed data had 1 columns
+2021-07-02 01:03:04,229 - INFO - ExtensionService_Models : 35 - Logging enabled
+2021-07-02 01:03:04,234 - INFO - ExtensionService_Models : 229 - *** Running server in insecure mode on port: 50053 ***
+2021-07-02 01:03:09,224 - INFO - ExtensionService_Models : 159 - GetCapabilities
+2021-07-02 01:03:09,231 - INFO - ExtensionService_Models : 182 - Adding to capabilities: random_forest(['column1'])
+2021-07-02 01:03:09,232 - INFO - ExtensionService_Models : 182 - Adding to capabilities: xgboost(['column1'])
+2021-07-02 01:03:42,084 - INFO - ExtensionService_Models : 196 - ExecuteFunction (functionId: 0)
+2021-07-02 01:06:23,253 - INFO - ExtensionService_Models : 35 - Logging enabled
+2021-07-02 01:06:23,258 - INFO - ExtensionService_Models : 222 - *** Running server in insecure mode on port: 50053 ***
+2021-07-02 01:06:28,591 - INFO - ExtensionService_Models : 152 - GetCapabilities
+2021-07-02 01:06:28,636 - INFO - ExtensionService_Models : 175 - Adding to capabilities: random_forest(['column1'])
+2021-07-02 01:06:28,644 - INFO - ExtensionService_Models : 175 - Adding to capabilities: xgboost(['column1'])
+2021-07-02 01:07:17,533 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 0)
+2021-07-02 01:07:33,653 - INFO - ExtensionService_Models : 91 - Funcion Ejecutada - Random Forest
+2021-07-02 01:13:27,144 - INFO - ExtensionService_Models : 35 - Logging enabled
+2021-07-02 01:13:27,148 - INFO - ExtensionService_Models : 222 - *** Running server in insecure mode on port: 50053 ***
+2021-07-02 01:13:32,989 - INFO - ExtensionService_Models : 152 - GetCapabilities
+2021-07-02 01:13:33,165 - INFO - ExtensionService_Models : 175 - Adding to capabilities: random_forest(['column1'])
+2021-07-02 01:13:33,178 - INFO - ExtensionService_Models : 175 - Adding to capabilities: xgboost(['column1'])
+2021-07-02 01:17:38,023 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 0)
+2021-07-02 01:17:50,993 - ERROR - _server : 472 - Exception iterating responses: 120599.5 has type float, but expected one of: bytes, unicode
+Traceback (most recent call last):
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/grpc/_server.py", line 462, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "ExtensionService_Models.py", line 87, in _random_forest
+    duals = iter([[SSE.Dual(strData=d)] for d in iter_model])
+  File "ExtensionService_Models.py", line 87, in <listcomp>
+    duals = iter([[SSE.Dual(strData=d)] for d in iter_model])
+TypeError: 120599.5 has type float, but expected one of: bytes, unicode
+2021-07-02 01:17:50,999 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 0)
+2021-07-02 01:18:04,627 - ERROR - _server : 472 - Exception iterating responses: 120599.5 has type float, but expected one of: bytes, unicode
+Traceback (most recent call last):
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/grpc/_server.py", line 462, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "ExtensionService_Models.py", line 87, in _random_forest
+    duals = iter([[SSE.Dual(strData=d)] for d in iter_model])
+  File "ExtensionService_Models.py", line 87, in <listcomp>
+    duals = iter([[SSE.Dual(strData=d)] for d in iter_model])
+TypeError: 120599.5 has type float, but expected one of: bytes, unicode
+2021-07-02 01:25:13,502 - INFO - ExtensionService_Models : 35 - Logging enabled
+2021-07-02 01:25:13,506 - INFO - ExtensionService_Models : 222 - *** Running server in insecure mode on port: 50053 ***
+2021-07-02 01:25:18,788 - INFO - ExtensionService_Models : 152 - GetCapabilities
+2021-07-02 01:25:18,794 - INFO - ExtensionService_Models : 175 - Adding to capabilities: random_forest(['column1'])
+2021-07-02 01:25:18,794 - INFO - ExtensionService_Models : 175 - Adding to capabilities: xgboost(['column1'])
+2021-07-02 01:28:12,744 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 0)
+2021-07-02 01:28:26,176 - INFO - ExtensionService_Models : 91 - Funcion Ejecutada - Random Forest
+2021-07-02 01:29:00,777 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 0)
+2021-07-02 01:29:01,723 - INFO - ExtensionService_Models : 91 - Funcion Ejecutada - Random Forest
+2021-07-02 01:34:09,181 - INFO - ExtensionService_Models : 35 - Logging enabled
+2021-07-02 01:34:09,185 - INFO - ExtensionService_Models : 222 - *** Running server in insecure mode on port: 50053 ***
+2021-07-02 01:36:29,312 - INFO - ExtensionService_Models : 152 - GetCapabilities
+2021-07-02 01:36:29,319 - INFO - ExtensionService_Models : 175 - Adding to capabilities: random_forest(['column1'])
+2021-07-02 01:36:29,320 - INFO - ExtensionService_Models : 175 - Adding to capabilities: xgboost(['column1'])
+2021-07-02 01:37:44,541 - INFO - ExtensionService_Models : 189 - ExecuteFunction (functionId: 0)
+2021-07-02 01:37:57,713 - INFO - ExtensionService_Models : 91 - Funcion Ejecutada - Random Forest
+2021-07-02 01:58:35,701 - INFO - ExtensionService_Models : 35 - Logging enabled
+2021-07-02 01:58:35,706 - INFO - ExtensionService_Models : 224 - *** Running server in insecure mode on port: 50053 ***
+2021-07-02 01:58:41,209 - INFO - ExtensionService_Models : 154 - GetCapabilities
+2021-07-02 01:58:41,258 - INFO - ExtensionService_Models : 177 - Adding to capabilities: random_forest(['column1'])
+2021-07-02 01:58:41,262 - INFO - ExtensionService_Models : 177 - Adding to capabilities: xgboost(['column1'])
+2021-07-02 01:59:22,430 - INFO - ExtensionService_Models : 191 - ExecuteFunction (functionId: 0)
+2021-07-02 01:59:36,875 - INFO - ExtensionService_Models : 92 - Funcion Ejecutada - Random Forest
+2021-07-02 02:05:26,674 - INFO - ExtensionService_Models : 35 - Logging enabled
+2021-07-02 02:05:26,678 - INFO - ExtensionService_Models : 226 - *** Running server in insecure mode on port: 50053 ***
+2021-07-02 02:05:31,784 - INFO - ExtensionService_Models : 156 - GetCapabilities
+2021-07-02 02:05:31,795 - INFO - ExtensionService_Models : 179 - Adding to capabilities: random_forest(['column1'])
+2021-07-02 02:05:31,797 - INFO - ExtensionService_Models : 179 - Adding to capabilities: xgboost(['column1'])
+2021-07-02 02:06:10,120 - INFO - ExtensionService_Models : 193 - ExecuteFunction (functionId: 0)
+2021-07-02 02:06:21,600 - ERROR - _server : 472 - Exception iterating responses: to_csv() got an unexpected keyword argument 'ignore_index'
+Traceback (most recent call last):
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/grpc/_server.py", line 462, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "ExtensionService_Models.py", line 80, in _random_forest
+    df_final.to_csv("data/test_2.csv",ignore_index=True)
+TypeError: to_csv() got an unexpected keyword argument 'ignore_index'
+2021-07-02 02:06:21,615 - INFO - ExtensionService_Models : 193 - ExecuteFunction (functionId: 0)
+2021-07-02 02:06:36,504 - ERROR - _server : 472 - Exception iterating responses: to_csv() got an unexpected keyword argument 'ignore_index'
+Traceback (most recent call last):
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/grpc/_server.py", line 462, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "ExtensionService_Models.py", line 80, in _random_forest
+    df_final.to_csv("data/test_2.csv",ignore_index=True)
+TypeError: to_csv() got an unexpected keyword argument 'ignore_index'
+2021-07-02 02:08:24,135 - INFO - ExtensionService_Models : 35 - Logging enabled
+2021-07-02 02:08:24,139 - INFO - ExtensionService_Models : 226 - *** Running server in insecure mode on port: 50053 ***
+2021-07-02 02:08:29,770 - INFO - ExtensionService_Models : 156 - GetCapabilities
+2021-07-02 02:08:29,792 - INFO - ExtensionService_Models : 179 - Adding to capabilities: random_forest(['column1'])
+2021-07-02 02:08:29,803 - INFO - ExtensionService_Models : 179 - Adding to capabilities: xgboost(['column1'])
+2021-07-02 02:09:06,764 - INFO - ExtensionService_Models : 193 - ExecuteFunction (functionId: 0)
+2021-07-02 02:09:20,785 - INFO - ExtensionService_Models : 94 - Funcion Ejecutada - Random Forest
+2021-07-02 02:24:08,081 - INFO - ExtensionService_Models : 35 - Logging enabled
+2021-07-02 02:24:08,086 - INFO - ExtensionService_Models : 223 - *** Running server in insecure mode on port: 50053 ***
+2021-07-02 02:24:14,457 - INFO - ExtensionService_Models : 153 - GetCapabilities
+2021-07-02 02:24:14,525 - INFO - ExtensionService_Models : 176 - Adding to capabilities: random_forest(['column1'])
+2021-07-02 02:24:14,530 - INFO - ExtensionService_Models : 176 - Adding to capabilities: xgboost(['column1'])
+2021-07-02 02:25:06,950 - INFO - ExtensionService_Models : 190 - ExecuteFunction (functionId: 0)
+2021-07-02 02:25:21,722 - INFO - ExtensionService_Models : 92 - Funcion Ejecutada - Random Forest
+2021-07-02 02:26:32,680 - INFO - ExtensionService_Models : 190 - ExecuteFunction (functionId: 0)
+2021-07-02 02:26:46,353 - INFO - ExtensionService_Models : 92 - Funcion Ejecutada - Random Forest
+2021-07-02 02:27:11,337 - INFO - ExtensionService_Models : 190 - ExecuteFunction (functionId: 0)
+2021-07-02 02:27:24,419 - INFO - ExtensionService_Models : 92 - Funcion Ejecutada - Random Forest
+2021-07-02 02:27:24,423 - INFO - ExtensionService_Models : 190 - ExecuteFunction (functionId: 1)
+2021-07-02 02:27:38,095 - ERROR - _server : 472 - Exception iterating responses: name 'rf_model' is not defined
+Traceback (most recent call last):
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/grpc/_server.py", line 462, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "ExtensionService_Models.py", line 111, in _xgboost
+    df_model = xgboost(df_final)
+  File "/mnt/f/Bryan/Proyecto/python_sse_docker/src/function_models.py", line 39, in xgboost
+    xgb_pred = rf_model.predict(df_xgb)
+NameError: name 'rf_model' is not defined
+2021-07-02 02:27:38,110 - INFO - ExtensionService_Models : 190 - ExecuteFunction (functionId: 1)
+2021-07-02 02:27:51,631 - ERROR - _server : 472 - Exception iterating responses: name 'rf_model' is not defined
+Traceback (most recent call last):
+  File "/home/bvargas/anaconda3/envs/pyqlik/lib/python3.8/site-packages/grpc/_server.py", line 462, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "ExtensionService_Models.py", line 111, in _xgboost
+    df_model = xgboost(df_final)
+  File "/mnt/f/Bryan/Proyecto/python_sse_docker/src/function_models.py", line 39, in xgboost
+    xgb_pred = rf_model.predict(df_xgb)
+NameError: name 'rf_model' is not defined
+2021-07-02 02:30:45,375 - INFO - ExtensionService_Models : 35 - Logging enabled
+2021-07-02 02:30:45,380 - INFO - ExtensionService_Models : 223 - *** Running server in insecure mode on port: 50053 ***
