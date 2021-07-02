@@ -1,0 +1,23 @@
+{
+    "Functions" : [
+        {
+            "Id" : 0,
+            "Name" : "random_forest",
+            "Type" : 2,
+            "ReturnType": 0,
+            "Params" : {
+                "column1" : 0
+                }
+        },
+		{
+            "Id" : 1,
+            "Name" : "xgboost",
+            "Type" : 2,
+            "ReturnType": 0,
+            "Params" : {
+				"column1": 0
+			}
+		}
+		
+    ]
+}
