@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+
+    qlik-pysse:
+        image: bvargasc/qlik-pysse:latest
+        ports:
+            - 50053:50053
